@@ -95,38 +95,6 @@
             --transition-slow: 500ms ease;
         }
 
-        /* =====================================================
-   R-page CMS Override - 突破容器限制
-   ===================================================== */
-        /* 強制內容區塊全寬 */
-        .church-music-wrapper {
-            width: 100vw !important;
-            max-width: 100vw !important;
-            margin-left: calc(-50vw + 50%) !important;
-            margin-right: calc(-50vw + 50%) !important;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        /* 如果 R-page 有父層容器限制，覆寫之 */
-        body,
-        html {
-            overflow-x: hidden;
-        }
-
-        /* 針對 R-page 容器的強制全寬 */
-        .navbar,
-        .hero,
-        .quick-nav,
-        .section,
-        .footer {
-            width: 100vw !important;
-            max-width: 100vw !important;
-            margin-left: calc(-50vw + 50%) !important;
-            position: relative;
-            left: 0;
-        }
-
         /* Reset */
         *,
         *::before,
@@ -393,7 +361,7 @@
 
         .hero-title {
             font-family: var(--font-display);
-            font-size: 5rem !important;
+            font-size: 5rem;
             font-weight: 700;
             margin-bottom: var(--space-md);
             letter-spacing: 0.05em;
@@ -2725,18 +2693,21 @@
 
         // Observe elements for animation
         document.querySelectorAll('.timeline-item, .mission-card, .stat-card, .testimonial-card, .quick-nav-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            el.classList.add('reveal-on-scroll');
             observer.observe(el);
         });
 
         // Add animation class styles
         const style = document.createElement('style');
         style.textContent = `
+    .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
     .animate-in {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
+        opacity: 1;
+        transform: translateY(0);
     }
 `;
         document.head.appendChild(style);
