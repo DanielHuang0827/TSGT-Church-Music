@@ -1,0 +1,2771 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="台灣神學研究學院教會音樂組 - 培育專業教會音樂人才，落實聖經、神學和禮拜實踐的學習，達成榮神益人、宣揚福音的目標。">
+    <meta name="keywords" content="教會音樂, 神學院, 台灣神學, 音樂碩士, 教會音樂系, 合唱指揮, 管風琴, 鋼琴, 聲樂">
+    <title>教會音樂組 | 台灣神學研究學院 - 培育專業教會音樂人才</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="教會音樂組 | 台灣神學研究學院">
+    <meta property="og:description" content="培育專業教會音樂人才，達成榮神益人、宣揚福音的目標">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        /* =====================================================
+   CSS Custom Properties & Reset
+   ===================================================== */
+        :root {
+            /* Colors - Light Wood & White Theme */
+            --primary: #9B8B7A;
+            /* 淺木色 - 主色調 */
+            --primary-dark: #7A6B5A;
+            /* 深木色 */
+            --primary-light: #B8A899;
+            /* 淺棕灰 */
+            --secondary: #5C534A;
+            /* 暖灰棕 */
+            --accent: #C4B5A5;
+            /* 淺米木色 - 強調色 */
+            --accent-light: #E8E2DC;
+            /* 極淺木白 */
+            --wood-warm: #A69888;
+            /* 暖木色 */
+            --cream: #FAF8F5;
+            /* 奶油白 */
+
+            /* Neutrals */
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+
+            /* Typography */
+            --font-sans: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Playfair Display', Georgia, serif;
+
+            /* Spacing */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 6rem;
+
+            /* Border Radius */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+            /* Transitions */
+            --transition-fast: 150ms ease;
+            --transition-base: 300ms ease;
+            --transition-slow: 500ms ease;
+        }
+
+        /* =====================================================
+   R-page CMS Override - 突破容器限制
+   ===================================================== */
+        /* 強制內容區塊全寬 */
+        .church-music-wrapper {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            margin-left: calc(-50vw + 50%) !important;
+            margin-right: calc(-50vw + 50%) !important;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* 如果 R-page 有父層容器限制，覆寫之 */
+        body,
+        html {
+            overflow-x: hidden;
+        }
+
+        /* 針對 R-page 容器的強制全寬 */
+        .navbar,
+        .hero,
+        .quick-nav,
+        .section,
+        .footer {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            margin-left: calc(-50vw + 50%) !important;
+            position: relative;
+            left: 0;
+        }
+
+        /* Reset */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 18px;
+            /* 基礎字型放大 */
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--gray-800);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* R-page 字型放大 */
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+        }
+
+        p,
+        li {
+            font-size: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        /* =====================================================
+   Utility Classes
+   ===================================================== */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        .section {
+            padding: var(--space-4xl) 0;
+        }
+
+        /* =====================================================
+   Navigation
+   ===================================================== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: transparent;
+            transition: all var(--transition-base);
+            padding: var(--space-md) 0;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-md);
+            padding: var(--space-sm) 0;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: var(--white);
+            transition: color var(--transition-fast);
+        }
+
+        .navbar.scrolled .nav-logo {
+            color: var(--primary);
+        }
+
+        .logo-img {
+            height: 32px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            font-size: 0.75rem;
+            line-height: 1.3;
+            max-width: 260px;
+        }
+
+        .footer-logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xl);
+            list-style: none;
+        }
+
+        .nav-link {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+            padding: var(--space-sm) 0;
+            transition: color var(--transition-fast);
+        }
+
+        .navbar.scrolled .nav-link {
+            color: var(--gray-700);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width var(--transition-base);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.cta-button {
+            background: var(--accent);
+            color: var(--gray-900);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+        }
+
+        .nav-link.cta-button::after {
+            display: none;
+        }
+
+        .nav-link.cta-button:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: var(--space-sm);
+        }
+
+        .nav-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            transition: all var(--transition-fast);
+        }
+
+        .navbar.scrolled .nav-toggle span {
+            background: var(--gray-800);
+        }
+
+        /* =====================================================
+   Hero Section
+   ===================================================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('https://www.tgst.edu.tw/var/file/1/1001/img/116/IMG_4412.jpg') center/cover no-repeat;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                    rgba(92, 83, 74, 0.75) 0%,
+                    rgba(155, 139, 122, 0.6) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: var(--space-xl);
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: var(--space-lg);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: 5rem !important;
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            letter-spacing: 0.05em;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.125rem, 3vw, 1.5rem);
+            font-weight: 300;
+            margin-bottom: var(--space-md);
+            color: var(--accent);
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto var(--space-2xl);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-md) var(--space-xl);
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: var(--radius-full);
+            transition: all var(--transition-fast);
+        }
+
+        .btn-primary {
+            background: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--gray-900);
+        }
+
+        .btn-large {
+            padding: var(--space-lg) var(--space-2xl);
+            font-size: 1.125rem;
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: var(--space-2xl);
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-sm);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.875rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(10px);
+            }
+        }
+
+        .scroll-indicator {
+            width: 24px;
+            height: 40px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: var(--radius-full);
+            position: relative;
+        }
+
+        .scroll-indicator::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: var(--radius-full);
+            animation: scroll 2s infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                opacity: 1;
+                top: 8px;
+            }
+
+            100% {
+                opacity: 0;
+                top: 24px;
+            }
+        }
+
+        /* =====================================================
+   Quick Navigation
+   ===================================================== */
+        .quick-nav {
+            background: var(--gray-50);
+            padding: var(--space-2xl) 0;
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .quick-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-lg);
+        }
+
+        .quick-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-xl);
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .quick-nav-icon {
+            font-size: 2rem;
+        }
+
+        .quick-nav-item span {
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+
+        /* =====================================================
+   Section Styles
+   ===================================================== */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--primary);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+        }
+
+        .section-header.light .section-badge {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: var(--space-md);
+        }
+
+        .section-header.light .section-title {
+            color: var(--white);
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* =====================================================
+   About Section
+   ===================================================== */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+
+        .about-text p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--gray-700);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-lg);
+            color: var(--white);
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cream);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            opacity: 0.9;
+            margin-top: var(--space-xs);
+        }
+
+        /* =====================================================
+   History / Timeline Section
+   ===================================================== */
+        .history {
+            background: var(--gray-50);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gray-200);
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--space-2xl);
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            background: var(--accent);
+            border: 3px solid var(--white);
+            border-radius: 50%;
+            box-shadow: var(--shadow-md);
+            z-index: 1;
+        }
+
+        .timeline-content {
+            width: calc(50% - 40px);
+            background: var(--white);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .timeline-year {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--white);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.25rem;
+            color: var(--gray-900);
+            margin-bottom: var(--space-sm);
+        }
+
+        .timeline-content p {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+        }
+
+        /* =====================================================
+   Mission Section
+   ===================================================== */
+        .mission {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-xl);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .mission-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all var(--transition-base);
+        }
+
+        .mission-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .mission-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .mission-card h3 {
+            font-size: 1.125rem;
+            margin-bottom: var(--space-sm);
+            color: var(--cream);
+        }
+
+        .mission-card p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .music-styles {
+            text-align: center;
+        }
+
+        .music-styles h3 {
+            font-size: 1.25rem;
+            margin-bottom: var(--space-lg);
+            color: var(--cream);
+        }
+
+        .style-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            justify-content: center;
+        }
+
+        .style-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all var(--transition-fast);
+        }
+
+        .style-tag:hover {
+            background: var(--cream);
+            color: var(--secondary);
+        }
+
+        /* =====================================================
+   Programs Section
+   ===================================================== */
+        .program-card-large {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            overflow: hidden;
+            border: 1px solid var(--gray-100);
+        }
+
+        .program-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            padding: var(--space-2xl);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+        }
+
+        .program-badge {
+            width: 80px;
+            height: 80px;
+            background: var(--cream);
+            color: var(--secondary);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .program-header h3 {
+            font-size: 1.75rem;
+            margin-bottom: var(--space-xs);
+        }
+
+        .program-header p {
+            opacity: 0.9;
+        }
+
+        .program-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-xl);
+            padding: var(--space-2xl);
+        }
+
+        .feature-item {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--accent-light);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .feature-item h4 {
+            font-size: 1rem;
+            color: var(--gray-900);
+            margin-bottom: var(--space-xs);
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+        }
+
+        .program-cta {
+            display: flex;
+            gap: var(--space-md);
+            padding: var(--space-2xl);
+            padding-top: 0;
+            flex-wrap: wrap;
+        }
+
+        .program-cta .btn-outline {
+            color: var(--gray-700);
+            border-color: var(--gray-300);
+        }
+
+        .program-cta .btn-outline:hover {
+            background: var(--gray-100);
+            color: var(--gray-900);
+        }
+
+        /* =====================================================
+   Testimonials Section
+   ===================================================== */
+        .testimonials {
+            background: var(--gray-50);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-2xl);
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
+            transition: all var(--transition-base);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .testimonial-content {
+            margin-bottom: var(--space-xl);
+        }
+
+        .testimonial-content p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--gray-700);
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            font-size: 1rem;
+            color: var(--gray-900);
+            margin-bottom: var(--space-xs);
+        }
+
+        .author-info p {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+        }
+
+        /* =====================================================
+   FAQ Section
+   ===================================================== */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-md);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            border: 1px solid var(--gray-100);
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-lg) var(--space-xl);
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--gray-800);
+            text-align: left;
+            transition: all var(--transition-fast);
+        }
+
+        .faq-question:hover {
+            background: var(--gray-50);
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: transform var(--transition-fast);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-base);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        .faq-answer p {
+            padding: 0 var(--space-xl) var(--space-xl);
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
+        /* =====================================================
+   Contact Section
+   ===================================================== */
+        .contact {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+        }
+
+        .contact-info h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .contact-info>p {
+            opacity: 0.9;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .contact-details {
+            display: grid;
+            gap: var(--space-lg);
+        }
+
+        .contact-item {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+        }
+
+        .contact-item h4 {
+            font-size: 0.875rem;
+            opacity: 0.7;
+            margin-bottom: var(--space-xs);
+        }
+
+        .contact-item p {
+            font-size: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+        }
+
+        .social-link {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-size: 0.9rem;
+            transition: all var(--transition-fast);
+        }
+
+        .social-link:hover {
+            background: var(--accent);
+            color: var(--gray-900);
+        }
+
+        .cta-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: var(--space-2xl);
+            border-radius: var(--radius-xl);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cta-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .cta-card>p {
+            opacity: 0.9;
+            margin-bottom: var(--space-xl);
+        }
+
+        .cta-card .btn {
+            margin: var(--space-sm);
+        }
+
+        /* =====================================================
+   Footer
+   ===================================================== */
+        .footer {
+            background: var(--gray-900);
+            color: var(--gray-400);
+            padding: var(--space-2xl) 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-size: 1.25rem;
+            color: var(--white);
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+        }
+
+        .footer-copyright {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        /* =====================================================
+   Majors Grid (新增 - 主修科目)
+   ===================================================== */
+        .majors-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: var(--space-lg);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .major-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+            border: 1px solid var(--gray-100);
+        }
+
+        .major-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .major-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .major-card h3 {
+            font-size: 1.125rem;
+            color: var(--gray-900);
+            margin-bottom: var(--space-sm);
+        }
+
+        .major-card p {
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        .program-info-box {
+            background: var(--accent-light);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            border-left: 4px solid var(--primary);
+        }
+
+        .program-info-box h4 {
+            color: var(--primary-dark);
+            margin-bottom: var(--space-md);
+        }
+
+        .program-info-box ul {
+            list-style: none;
+        }
+
+        .program-info-box li {
+            padding: var(--space-xs) 0;
+            color: var(--gray-700);
+        }
+
+        .program-info-box li::before {
+            content: "✓ ";
+            color: var(--primary);
+        }
+
+        /* =====================================================
+   Curriculum Section (新增 - 課程內容)
+   ===================================================== */
+        .curriculum {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+        }
+
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .curriculum-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .curriculum-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .curriculum-number {
+            background: var(--cream);
+            color: var(--secondary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .curriculum-header h3 {
+            font-size: 1.125rem;
+            color: var(--cream);
+        }
+
+        .curriculum-list {
+            list-style: none;
+        }
+
+        .curriculum-list li {
+            padding: var(--space-xs) 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .curriculum-list li:last-child {
+            border-bottom: none;
+        }
+
+        .curriculum-cta {
+            text-align: center;
+        }
+
+        .curriculum-cta .btn-outline {
+            border-color: var(--cream);
+            color: var(--cream);
+        }
+
+        .curriculum-cta .btn-outline:hover {
+            background: var(--cream);
+            color: var(--secondary);
+        }
+
+        /* =====================================================
+   Social Highlights Section (新增 - 社群亮點)
+   ===================================================== */
+        .social-highlights {
+            background: var(--gray-50);
+        }
+
+        .social-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-2xl);
+        }
+
+        .social-highlight-card {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            min-height: 300px;
+            display: flex;
+            align-items: flex-end;
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .social-highlight-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .social-card-bg {
+            position: absolute;
+            inset: 0;
+            transition: transform var(--transition-base);
+        }
+
+        .social-highlight-card.story .social-card-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .social-highlight-card.camp .social-card-bg {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .social-highlight-card:hover .social-card-bg {
+            transform: scale(1.05);
+        }
+
+        .social-card-content {
+            position: relative;
+            z-index: 1;
+            padding: var(--space-2xl);
+            color: var(--white);
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .social-card-icon {
+            font-size: 3rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .social-highlight-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-sm);
+            font-weight: 700;
+        }
+
+        .social-highlight-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: var(--space-md);
+        }
+
+        .social-card-cta {
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: var(--space-sm) var(--space-lg);
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-full);
+            transition: all var(--transition-fast);
+        }
+
+        .social-highlight-card:hover .social-card-cta {
+            background: var(--white);
+            color: var(--gray-900);
+        }
+
+        /* =====================================================
+   Faculty Section (新增 - 師資陣容)
+   ===================================================== */
+        .faculty-section-title {
+            margin: var(--space-2xl) 0 var(--space-lg);
+        }
+
+        .faculty-section-title h3 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: var(--space-sm);
+            display: inline-block;
+        }
+
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-xl);
+            margin-bottom: var(--space-xl);
+        }
+
+        .faculty-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            display: flex;
+            gap: var(--space-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--gray-100);
+        }
+
+        .faculty-avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .faculty-info h4 {
+            font-size: 1.125rem;
+            color: var(--gray-900);
+            margin-bottom: var(--space-xs);
+        }
+
+        .faculty-title {
+            color: var(--primary);
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: var(--space-sm);
+        }
+
+        .faculty-edu {
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            margin-bottom: var(--space-sm);
+        }
+
+        .faculty-specialty {
+            font-size: 0.85rem;
+            color: var(--gray-700);
+        }
+
+        .faculty-grid-small {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .faculty-card-mini {
+            background: var(--gray-50);
+            border-radius: var(--radius-md);
+            padding: var(--space-lg);
+            text-align: center;
+        }
+
+        .faculty-card-mini h4 {
+            font-size: 1rem;
+            color: var(--gray-900);
+            margin-bottom: var(--space-xs);
+        }
+
+        .faculty-card-mini p {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-bottom: var(--space-sm);
+        }
+
+        .faculty-tag {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--primary-dark);
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+        }
+
+        .faculty-cta {
+            text-align: center;
+            margin-top: var(--space-2xl);
+        }
+
+        /* =====================================================
+   Admission Section (新增 - 招生資訊)
+   ===================================================== */
+        .admission {
+            background: var(--gray-50);
+        }
+
+        .admission-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .admission-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-md);
+        }
+
+        .admission-card.highlight {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+        }
+
+        .admission-card.highlight h4 {
+            color: var(--cream);
+        }
+
+        .admission-icon {
+            font-size: 2rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .admission-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: var(--space-lg);
+            color: var(--gray-900);
+        }
+
+        .admission-card.highlight h3 {
+            color: var(--white);
+        }
+
+        .admission-content h4 {
+            font-size: 0.95rem;
+            color: var(--primary);
+            margin-top: var(--space-md);
+            margin-bottom: var(--space-sm);
+        }
+
+        .admission-content ul {
+            list-style: none;
+            margin-bottom: var(--space-md);
+        }
+
+        .admission-content li {
+            font-size: 0.9rem;
+            padding: var(--space-xs) 0;
+            color: var(--gray-700);
+        }
+
+        .admission-card.highlight li {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .admission-content li::before {
+            content: "• ";
+            color: var(--primary);
+        }
+
+        .admission-card.highlight li::before {
+            color: var(--cream);
+        }
+
+        .admission-content p {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        .admission-card.highlight p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .admission-cta {
+            text-align: center;
+        }
+
+        /* =====================================================
+   Downloads Section (新增 - 下載專區)
+   ===================================================== */
+        .downloads {
+            background: var(--white);
+        }
+
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+
+        .download-card {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            background: var(--gray-50);
+            border-radius: var(--radius-md);
+            padding: var(--space-lg);
+            transition: all var(--transition-fast);
+            border: 1px solid var(--gray-100);
+        }
+
+        .download-card:hover {
+            background: var(--accent-light);
+            transform: translateX(5px);
+        }
+
+        .download-icon {
+            font-size: 1.5rem;
+        }
+
+        .download-name {
+            flex: 1;
+            font-size: 0.9rem;
+            color: var(--gray-800);
+        }
+
+        .download-type {
+            background: var(--primary);
+            color: var(--white);
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: var(--radius-sm);
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .downloads-more {
+            text-align: center;
+        }
+
+        /* =====================================================
+   Social Buttons & School Links (新增)
+   ===================================================== */
+        .social-section {
+            margin-top: var(--space-xl);
+        }
+
+        .social-section h4,
+        .school-links h4 {
+            font-size: 0.9rem;
+            margin-bottom: var(--space-md);
+            opacity: 0.8;
+        }
+
+        .social-buttons {
+            display: flex;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-size: 0.9rem;
+            transition: all var(--transition-fast);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .social-btn:hover {
+            background: var(--cream);
+            color: var(--secondary);
+        }
+
+        .social-icon {
+            font-size: 1.25rem;
+        }
+
+        .school-links {
+            margin-top: var(--space-xl);
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-md);
+        }
+
+        .school-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-md);
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            transition: all var(--transition-fast);
+        }
+
+        .school-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .link-icon {
+            font-size: 1.25rem;
+        }
+
+        /* =====================================================
+   Staff Info (新增)
+   ===================================================== */
+        .staff-info {
+            margin-top: var(--space-xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .staff-info h4 {
+            font-size: 0.9rem;
+            margin-bottom: var(--space-md);
+            opacity: 0.8;
+        }
+
+        .staff-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .staff-item {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+
+        .staff-item strong {
+            font-size: 0.9rem;
+        }
+
+        .staff-item span {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        /* Footer Updates */
+        .footer-address,
+        .footer-contact {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* =====================================================
+   Responsive Design
+   ===================================================== */
+        @media (max-width: 1024px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                max-width: 500px;
+                margin: var(--space-2xl) auto 0;
+            }
+
+            .mission-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .program-features {
+                grid-template-columns: 1fr;
+            }
+
+            .majors-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .curriculum-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .faculty-grid-small {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .admission-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .downloads-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background: var(--white);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: var(--space-4xl) var(--space-xl);
+                gap: var(--space-lg);
+                box-shadow: var(--shadow-xl);
+                transition: right var(--transition-base);
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .nav-menu .nav-link {
+                color: var(--gray-800);
+                font-size: 1.125rem;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .quick-nav-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(odd) {
+                flex-direction: row;
+                text-align: left;
+                padding-left: 50px;
+            }
+
+            .timeline-marker {
+                left: 20px;
+            }
+
+            .timeline-content {
+                width: 100%;
+            }
+
+            .mission-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .majors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .curriculum-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faculty-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faculty-grid-small {
+                grid-template-columns: 1fr;
+            }
+
+            .faculty-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .downloads-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .social-highlight-card {
+                min-height: 250px;
+            }
+
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .quick-nav-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .program-cta {
+                flex-direction: column;
+            }
+
+            .majors-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-buttons {
+                flex-direction: column;
+            }
+
+            .social-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="church-music-wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="https://www.tgst.edu.tw/var/file/1/1001/img/116/537325544.png" alt="台神校徽" class="logo-img"
+                        style="height: 32px; width: auto;">
+                    <span class="logo-text">台灣神學研究學院 基督教研究所 文學碩士班 教會音樂組</span>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" class="nav-link">關於我們</a></li>
+                    <li><a href="#programs" class="nav-link">主修與課程</a></li>
+                    <li><a href="#faculty" class="nav-link">師資陣容</a></li>
+                    <li><a href="#admission" class="nav-link">招生資訊</a></li>
+                    <li><a href="#faq" class="nav-link">常見問題</a></li>
+                    <li><a href="#contact" class="nav-link cta-button">聯絡我們</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge">台灣神學研究學院 · 基督教研究所</span>
+                <h1 class="hero-title">教會音樂組</h1>
+                <p class="hero-subtitle">用音樂榮耀神，以專業服事教會</p>
+                <p class="hero-description">培育專業教會音樂人才，落實聖經、神學和禮拜實踐的學習</p>
+                <div class="hero-buttons">
+                    <a href="#admission" class="btn btn-primary">了解招生資訊</a>
+                    <a href="#contact" class="btn btn-outline">立即諮詢</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>向下滾動</span>
+                <div class="scroll-indicator"></div>
+            </div>
+        </header>
+
+        <!-- Quick Navigation -->
+        <section class="quick-nav">
+            <div class="container">
+                <div class="quick-nav-grid">
+                    <a href="#programs" class="quick-nav-item">
+                        <div class="quick-nav-icon">🎹</div>
+                        <span>主修科目</span>
+                    </a>
+                    <a href="#curriculum" class="quick-nav-item">
+                        <div class="quick-nav-icon">📚</div>
+                        <span>課程內容</span>
+                    </a>
+                    <a href="#faculty" class="quick-nav-item">
+                        <div class="quick-nav-icon">👨‍🏫</div>
+                        <span>師資陣容</span>
+                    </a>
+                    <a href="#admission" class="quick-nav-item">
+                        <div class="quick-nav-icon">📝</div>
+                        <span>招生資訊</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">關於我們</span>
+                    <h2 class="section-title">神學與音樂的完美融合</h2>
+                    <p class="section-subtitle">西方音樂史與基督教發展史脈絡交織不可分</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>神學與教會音樂在整體基督教信仰傳統裡有著極為深厚的相互關係。許多著名的古典音樂創作有明確的神學意涵，並廣泛運用於各種宗教聖典中；諸多神學概念也在教會音樂素材的承載下，生動的達到宣揚教義、教化信徒的功能。
+                        </p>
+                        <p style="margin-top: 1rem;">
+                            教會音樂系承襲宣教士帶入的豐富教會音樂寶藏，位居大台北多元的藝術文化環境，藉由愛神愛人頂尖師資的教導，聖經神學專業的修習，精進音樂演奏創作能力，期盼傳承歷史亦回應時代需求，培育、裝備專業的台灣教會音樂人才。
+                        </p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">60+</div>
+                            <div class="stat-label">年教學歷史</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">培育校友</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">MA</div>
+                            <div class="stat-label">碩士學位</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="section history" id="history">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">沿革</span>
+                    <h2 class="section-title">六十年的音樂傳承</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">1962</div>
+                            <h3>正式招生</h3>
+                            <p>教會音樂系原隸屬教育系的音樂科，正式對外招生</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">1976</div>
+                            <h3>更名教會音樂系</h3>
+                            <p>正式更名為教會音樂系，確立專業發展方向</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2007</div>
+                            <h3>碩士班成立</h3>
+                            <p>為回應教會廣大需求，正式招收音樂碩士班</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">至今</div>
+                            <h3>持續發展</h3>
+                            <p>已培育近五百位校友投入教會、機構、學校各種音樂事工</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section - 主修科目 -->
+        <section class="section programs" id="programs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">主修科目</span>
+                    <h2 class="section-title">五大專業主修方向</h2>
+                    <p class="section-subtitle">完成研究所課程授予 Master of Arts (MA) 學位</p>
+                </div>
+
+                <div class="majors-grid">
+                    <div class="major-card">
+                        <div class="major-icon">🎼</div>
+                        <h3>合唱指揮</h3>
+                        <p>
+                            指揮學<br>
+                            合唱曲目學研究<br>
+                            合唱排練技巧<br>
+                            合唱教學法<br>
+                            神劇指揮
+                        </p>
+                    </div>
+                    <div class="major-card">
+                        <div class="major-icon">🎹</div>
+                        <h3>管風琴</h3>
+                        <p>
+                            巴赫管風琴作品<br>
+                            古典浪漫現代樂派<br>
+                            鍵盤曲目研究<br>
+                            即興與編曲
+                        </p>
+                    </div>
+                    <div class="major-card">
+                        <div class="major-icon">🎵</div>
+                        <h3>鋼琴</h3>
+                        <p>
+                            平均律<br>
+                            古典曲目<br>
+                            浪漫現代樂派<br>
+                            司琴學<br>
+                            進階鍵盤合作
+                        </p>
+                    </div>
+                    <div class="major-card">
+                        <div class="major-icon">🎤</div>
+                        <h3>聲樂</h3>
+                        <p>
+                            宗教歌曲<br>
+                            義大利藝術歌曲<br>
+                            神劇歌劇選曲<br>
+                            語音學
+                        </p>
+                    </div>
+                    <div class="major-card">
+                        <div class="major-icon">⛪</div>
+                        <h3>教會音樂事工</h3>
+                        <p>
+                            敬拜團帶領實務<br>
+                            電腦音樂與媒體製作<br>
+                            禮拜設計與實踐
+                        </p>
+                    </div>
+                </div>
+
+                <div class="program-info-box">
+                    <h4>📋 修業資訊</h4>
+                    <ul>
+                        <li>修業年限：全修 2 – 4 年</li>
+                        <li>已具教育部認證的音樂碩士學分，最多可抵 18 學分</li>
+                        <li>完成課程授予 Master of Arts (MA) 學位</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section - 課程內容 -->
+        <section class="section curriculum" id="curriculum">
+            <div class="container">
+                <div class="section-header light">
+                    <span class="section-badge">課程內容</span>
+                    <h2 class="section-title">完整課程架構</h2>
+                </div>
+
+                <div class="curriculum-grid">
+                    <div class="curriculum-card">
+                        <div class="curriculum-header">
+                            <span class="curriculum-number">01</span>
+                            <h3>神學領域</h3>
+                        </div>
+                        <ul class="curriculum-list">
+                            <li>神學導論 (3學分)</li>
+                            <li>新約導論 (3學分)</li>
+                            <li>舊約導論 (3學分)</li>
+                            <li>禮拜學 (選修3學分)</li>
+                        </ul>
+                    </div>
+
+                    <div class="curriculum-card">
+                        <div class="curriculum-header">
+                            <span class="curriculum-number">02</span>
+                            <h3>教會音樂必修</h3>
+                        </div>
+                        <ul class="curriculum-list">
+                            <li>指揮學 (3學分)</li>
+                            <li>司琴學 (3學分)</li>
+                            <li>會眾詩歌 (3學分)</li>
+                            <li>教會音樂史與曲目學 I & II (各3學分)</li>
+                            <li>音樂事工的教牧應用 (3學分)</li>
+                            <li>崇拜與禮拜設計實踐 (3學分)</li>
+                            <li>音樂研究法 (2學分)</li>
+                            <li>教會音樂教育 (3學分)</li>
+                        </ul>
+                    </div>
+
+                    <div class="curriculum-card">
+                        <div class="curriculum-header">
+                            <span class="curriculum-number">03</span>
+                            <h3>專業主修課程</h3>
+                        </div>
+                        <ul class="curriculum-list">
+                            <li>個別指導 (每學期1學分)</li>
+                            <li>術科實務課程 (1學分)</li>
+                            <li>詩班與敬拜團 (0.5學分)</li>
+                            <li>畢業論文 I & II</li>
+                            <li>畢業發表 (2學分)</li>
+                        </ul>
+                    </div>
+
+                    <div class="curriculum-card">
+                        <div class="curriculum-header">
+                            <span class="curriculum-number">04</span>
+                            <h3>實務實習</h3>
+                        </div>
+                        <ul class="curriculum-list">
+                            <li>教會參訪 (必修0學分)</li>
+                            <li>禮拜與靈性實踐 I & II</li>
+                            <li>教會音樂實習 (暑假兩學期)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="curriculum-cta">
+                    <a href="https://www.tgst.edu.tw/p/412-1001-1256.php?Lang=zh-tw" class="btn btn-outline"
+                        target="_blank">查看完整課程簡介</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Highlights Section - 社群亮點 -->
+        <section class="section social-highlights" id="social">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">追蹤我們</span>
+                    <h2 class="section-title">社群亮點</h2>
+                    <p class="section-subtitle">跟隨我們的故事，見證教會音樂的美好</p>
+                </div>
+
+                <div class="social-cards">
+                    <a href="https://www.facebook.com/profile.php?id=61577588704155" target="_blank"
+                        class="social-highlight-card story">
+                        <div class="social-card-bg"></div>
+                        <div class="social-card-content">
+                            <div class="social-card-icon">📖</div>
+                            <h3>我們的故事</h3>
+                            <p>記錄教會音樂組的日常點滴、師生互動、課堂花絮與生命見證，讓您更認識這個溫馨的大家庭</p>
+                            <span class="social-card-cta">前往 Facebook 專頁 →</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61557236376250" target="_blank"
+                        class="social-highlight-card camp">
+                        <div class="social-card-bg"></div>
+                        <div class="social-card-content">
+                            <div class="social-card-icon">🎵</div>
+                            <h3>教會音樂合唱營</h3>
+                            <p>每年舉辦的合唱營活動，匯聚各教會詩班成員，一同學習、敬拜、成長，體驗教會音樂的豐富與喜樂</p>
+                            <span class="social-card-cta">前往 Facebook 專頁 →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faculty Section - 師資陣容 -->
+        <section class="section faculty" id="faculty">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">師資陣容</span>
+                    <h2 class="section-title">專業師資團隊</h2>
+                    <p class="section-subtitle">愛神愛人的頂尖師資，以生命影響生命</p>
+                </div>
+
+                <div class="faculty-section-title">
+                    <h3>專任師資</h3>
+                </div>
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <div class="faculty-avatar">李</div>
+                        <div class="faculty-info">
+                            <h4>李建一 主任</h4>
+                            <p class="faculty-title">助理教授 / 專任</p>
+                            <p class="faculty-edu">美國南卡羅萊納大學合唱指揮博士<br>密西西比大學合唱指揮與鋼琴演奏雙碩士</p>
+                            <p class="faculty-specialty"><strong>專長：</strong>指揮學、合唱曲目學研究、合唱排練技巧、神劇指揮</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-avatar">S</div>
+                        <div class="faculty-info">
+                            <h4>Sean Jackson 老師</h4>
+                            <p class="faculty-title">助理教授 / 專任</p>
+                            <p class="faculty-edu">茱麗亞音樂院碩、博士</p>
+                            <p class="faculty-specialty"><strong>專長：</strong>管風琴、教會音樂事工、司琴學、鍵盤即興編曲</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-section-title">
+                    <h3>現任兼任師資</h3>
+                </div>
+                <div class="faculty-grid faculty-grid-small">
+                    <div class="faculty-card-mini">
+                        <h4>林汶娟 老師</h4>
+                        <p>美國西南浸信會神學院博士</p>
+                        <span class="faculty-tag">禮拜學・敬拜團實務</span>
+                    </div>
+                    <div class="faculty-card-mini">
+                        <h4>紀華冠 老師</h4>
+                        <p>美國艾格西大學博士</p>
+                        <span class="faculty-tag">教會音樂教育</span>
+                    </div>
+                    <div class="faculty-card-mini">
+                        <h4>黃瓊慧 老師</h4>
+                        <p>英國謝菲爾德大學博士</p>
+                        <span class="faculty-tag">西洋音樂史・和聲學</span>
+                    </div>
+                    <div class="faculty-card-mini">
+                        <h4>周筱倩 老師</h4>
+                        <p>美國明尼蘇達大學博士</p>
+                        <span class="faculty-tag">聲樂教學・語音學</span>
+                    </div>
+                    <div class="faculty-card-mini">
+                        <h4>江靖波 老師</h4>
+                        <p>USC 指揮碩士</p>
+                        <span class="faculty-tag">管弦樂指揮</span>
+                    </div>
+                    <div class="faculty-card-mini">
+                        <h4>丁乙恆 老師</h4>
+                        <p>世新大學傳播管理碩士</p>
+                        <span class="faculty-tag">電腦音樂編曲</span>
+                    </div>
+                </div>
+
+                <div class="faculty-cta">
+                    <a href="https://www.tgst.edu.tw/p/412-1001-575.php" class="btn btn-primary"
+                        target="_blank">查看完整師資陣容</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admission Section - 招生資訊 -->
+        <section class="section admission" id="admission">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">招生資訊</span>
+                    <h2 class="section-title">加入我們的行列</h2>
+                </div>
+
+                <div class="admission-grid">
+                    <div class="admission-card">
+                        <div class="admission-icon">📋</div>
+                        <h3>報考方式</h3>
+                        <div class="admission-content">
+                            <h4>推薦甄試</h4>
+                            <ul>
+                                <li>公立或教育部認證大學畢業</li>
+                                <li>全職工作滿五年以上</li>
+                                <li>受洗滿一年</li>
+                                <li>不需參加一般科目考試</li>
+                            </ul>
+                            <h4>一般考試</h4>
+                            <ul>
+                                <li>學歷符合但工作經驗未滿五年者</li>
+                                <li>需參加一般科目考試</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="admission-card">
+                        <div class="admission-icon">📝</div>
+                        <h3>考試內容</h3>
+                        <div class="admission-content">
+                            <h4>一般科目</h4>
+                            <ul>
+                                <li>聖經</li>
+                                <li>論述文</li>
+                                <li>英文</li>
+                                <li>性向測驗及面試</li>
+                            </ul>
+                            <h4>音樂共同科目</h4>
+                            <ul>
+                                <li>合唱指揮</li>
+                                <li>鋼琴</li>
+                                <li>聲樂</li>
+                                <li>理論、西洋音樂史</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="admission-card highlight">
+                        <div class="admission-icon">🎁</div>
+                        <h3>獎助學金</h3>
+                        <div class="admission-content">
+                            <h4>新生獎助學金</h4>
+                            <p>「張施象嫄、張雍容紀念獎助學金」<br>符合資格之音碩新生可獲 <strong>5萬～10萬元</strong> 獎助學金</p>
+                            <h4>學院獎助學金</h4>
+                            <p>為全修生設置之多項獎助學金，可依需求與條件於第一學年期末申請</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admission-cta">
+                    <a href="https://www.tgst.edu.tw/p/412-1001-547.php" class="btn btn-primary btn-large"
+                        target="_blank">查看完整招生簡章</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">常見問題</span>
+                    <h2 class="section-title">FAQ</h2>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>入學需要具備什麼音樂基礎？</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>申請者需具備基本的音樂素養，包括樂理知識和至少一項主修樂器的演奏能力。入學考試包含術科測驗（合唱指揮、鋼琴、聲樂、理論、西洋音樂史）和面試，會評估您的音樂程度和服事心志。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>課程需要多長時間完成？</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>碩士班課程標準修業年限為 2 至 4 年，需完成規定學分並通過論文或專題研究考核後，授予 Master of Arts (MA) 學位。已具教育部認證的音樂碩士學分，最多可抵
+                                18
+                                學分。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>畢業後有哪些就業方向？</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>畢業校友主要投入教會音樂事工，包括：教會音樂總監、敬拜主領、詩班指揮、教會司琴/樂手、機構音樂同工、神學院音樂教師、基督教學校音樂老師等。六十多年來已培育近五百位校友分別投入教會、機構、學校各種音樂事工。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>有提供獎學金嗎？</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>本系設有「張施象嫄、張雍容紀念獎助學金」，符合資格之音碩新生可獲 5萬～10萬元獎助學金。學院另設有為全修生設置之多項獎助學金，可依需求與條件於第一學年期末申請。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>各主修的考試內容是什麼？</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>合唱指揮：</strong>準備五首不同風格之指定曲，於考試當日現場指揮小詩班。<br>
+                                <strong>管風琴：</strong>巴赫作品一首，古典/浪漫/現代樂派自選二首。<br>
+                                <strong>鋼琴：</strong>共三首（須背譜），巴赫平均律一組、古典曲目快板樂章、浪漫或現代樂派一曲。<br>
+                                <strong>聲樂：</strong>共四首（須背譜），須包括華、英、義三種語言。<br>
+                                <strong>教會音樂事工：</strong>撰寫至少2500字論述文。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Downloads Section -->
+        <section class="section downloads" id="downloads">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">表單下載</span>
+                    <h2 class="section-title">相關文件下載</h2>
+                </div>
+
+                <div class="downloads-grid">
+                    <a href="https://www.tgst.edu.tw/var/file/1/1001/img/117/740683617.odt" class="download-card"
+                        target="_blank">
+                        <span class="download-icon">📄</span>
+                        <span class="download-name">台神畢業發表申請表單</span>
+                        <span class="download-type">DOC</span>
+                    </a>
+                    <a href="https://www.tgst.edu.tw/var/file/1/1001/img/117/614624493.pdf" class="download-card"
+                        target="_blank">
+                        <span class="download-icon">📄</span>
+                        <span class="download-name">術科上課紀錄表</span>
+                        <span class="download-type">PDF</span>
+                    </a>
+                    <a href="https://www.tgst.edu.tw/var/file/1/1001/img/367626919.pdf" class="download-card"
+                        target="_blank">
+                        <span class="download-icon">📄</span>
+                        <span class="download-name">樂器器材借用辦法 & 申請表</span>
+                        <span class="download-type">PDF</span>
+                    </a>
+                </div>
+
+                <div class="downloads-more">
+                    <a href="https://www.tgst.edu.tw/p/412-1001-1189.php?Lang=zh-tw" class="btn btn-outline"
+                        target="_blank">前往下載專區</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>聯絡我們</h2>
+                        <p>若您對教會音樂組有任何疑問，歡迎透過以下方式與我們聯繫</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h4>地址</h4>
+                                    <p>111014 台北市士林區仰德大道二段二巷20號</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <h4>系助理電話</h4>
+                                    <p>(02) 2881-4472 分機 176</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <h4>系助理 Email</h4>
+                                    <p>daniel@tgst.edu.tw</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">💬</div>
+                                <div>
+                                    <h4>官方 LINE@</h4>
+                                    <p><a href="https://lin.ee/PPUiMQU" target="_blank"
+                                            style="color: inherit; text-decoration: underline;">點擊加入好友，線上諮詢</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Staff Info -->
+                        <div class="staff-info">
+                            <h4>專任與行政同工</h4>
+                            <div class="staff-list">
+                                <div class="staff-item">
+                                    <strong>李建一 主任</strong>
+                                    <span>分機 231 · chienyi@tgst.edu.tw</span>
+                                </div>
+                                <div class="staff-item">
+                                    <strong>Sean Jackson 專任教師</strong>
+                                    <span>分機 233 · drseanjackson@tgst.edu.tw</span>
+                                </div>
+                                <div class="staff-item">
+                                    <strong>黃敬恩 行政助理</strong>
+                                    <span>分機 176 · daniel@tgst.edu.tw</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="contact-cta">
+                        <div class="cta-card">
+                            <h3>準備好開始您的音樂服事之旅？</h3>
+                            <p>立即了解招生資訊，開啟您在教會音樂領域的專業訓練</p>
+                            <a href="https://www.tgst.edu.tw/p/412-1001-547.php" class="btn btn-primary btn-large"
+                                target="_blank">查看招生資訊</a>
+                        </div>
+
+                        <!-- School Links - 學校連結 -->
+                        <div class="school-links">
+                            <h4>學校相關連結</h4>
+                            <div class="links-grid">
+                                <a href="https://www.tgst.edu.tw/p/412-1001-546.php" target="_blank"
+                                    class="school-link">
+                                    <span class="link-icon">📅</span>
+                                    <span>課程時間表</span>
+                                </a>
+                                <a href="https://www.tgst.edu.tw/p/412-1001-681.php" target="_blank"
+                                    class="school-link">
+                                    <span class="link-icon">🗓️</span>
+                                    <span>學校行事曆</span>
+                                </a>
+                                <a href="https://www.tgst.edu.tw" target="_blank" class="school-link">
+                                    <span class="link-icon">🏛️</span>
+                                    <span>台神官方網站</span>
+                                </a>
+                                <a href="https://www.tgst.edu.tw/p/412-1001-1257.php?Lang=zh-tw" target="_blank"
+                                    class="school-link">
+                                    <span class="link-icon">👥</span>
+                                    <span>專任與行政</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="https://www.tgst.edu.tw/var/file/1/1001/img/116/537325544.png" alt="台神校徽"
+                            class="footer-logo-img" style="height: 40px; width: auto;">
+                        <span>台灣神學研究學院 基督教研究所 文學碩士班 教會音樂組</span>
+                    </div>
+                    <p class="footer-text">台神學校財團法人台灣神學研究學院</p>
+                    <p class="footer-address">111014 台北市士林區仰德大道二段二巷20號</p>
+                    <p class="footer-contact">電話：(02) 2881-4472 · E-mail：tgst@tgst.edu.tw</p>
+                    <p class="footer-copyright">© 2024 Taiwan Graduate School of Theology. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <script>
+        // =====================================================
+        // Navigation Scroll Effect
+        // =====================================================
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // =====================================================
+        // Mobile Navigation Toggle
+        // =====================================================
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // =====================================================
+        // FAQ Accordion
+        // =====================================================
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // =====================================================
+        // Smooth Scroll for Anchor Links
+        // =====================================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // =====================================================
+        // Intersection Observer for Animations
+        // =====================================================
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.timeline-item, .mission-card, .stat-card, .testimonial-card, .quick-nav-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Add animation class styles
+        const style = document.createElement('style');
+        style.textContent = `
+    .animate-in {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+`;
+        document.head.appendChild(style);
+
+        // =====================================================
+        // Stagger Animation for Timeline Items
+        // =====================================================
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        timelineItems.forEach((item, index) => {
+            item.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        // =====================================================
+        // Quick Nav Items Stagger
+        // =====================================================
+        const quickNavItems = document.querySelectorAll('.quick-nav-item');
+        quickNavItems.forEach((item, index) => {
+            item.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        // =====================================================
+        // Mission Cards Stagger
+        // =====================================================
+        const missionCards = document.querySelectorAll('.mission-card');
+        missionCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+    </script>
+</body>
+
+</html>
